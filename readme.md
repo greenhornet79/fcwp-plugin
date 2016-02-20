@@ -8,15 +8,16 @@
         - Inspiring Dashboards https://wordpress.org/plugins/inspiring-dashboards/
         - Page Edit Toolbar https://wordpress.org/plugins/page-edit-toolbar/
     - Extensive
-        - Toast SEO https://wordpress.org/plugins/wordpress-seo/
+        - Yoast SEO https://wordpress.org/plugins/wordpress-seo/
         - WooCommerce https://wordpress.org/plugins/woocommerce/
         - Gravity Forms
     - Different than your theme
         - wp-content/themes/
         - wp-content/plugins/
-        - Uses hooks, filters, short codes, and widget
+        - Uses hooks, filters, shortcodes, widgets
         - Plugins: functionality, Themes: styling
         - Want your user to be able to change the theme (design) and not lose any functionality
+        - Create a functionality plugin when developing a theme
 - Strengths
     - use it with almost any theme and it will work
     - built to be modular so you can copy it from project to project
@@ -61,7 +62,6 @@
         - accepts a variable or series of variables, modifies them, and returns them back
         - apply_filters https://developer.wordpress.org/reference/functions/apply_filters/
         - add_filter https://codex.wordpress.org/Function_Reference/add_filter
-
     - Plugin Call on Page Load
         - wp-config > functions loaded > plugins loaded > pluggable loaded > translations loaded > theme loaded > page content
 - Basic Plugin Requirements
@@ -71,7 +71,9 @@
     - Display plugin in Plugins screen
 - Examples
     - Output date in footer using wp_footer
-    - Change post title with apply_filter the_title https://github.com/WordPress/WordPress/blob/master/wp-includes/post-template.php#L99
+    - Output date at the end of the content with the_content
+    - Remove post title with the_title 
+    - Add text to footer of admin
     - Add styles to login screen
 - Things to Think About
     - Overall structure of the plugin
