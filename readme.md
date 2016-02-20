@@ -1,3 +1,5 @@
+# Notes for FCWP Plugin Development Workshop 
+
 - What are WordPress plugins
     - modules you can activate on your site to provide a series of features or elements
     - PHP script that extends or alters the core functionality of WordPress
